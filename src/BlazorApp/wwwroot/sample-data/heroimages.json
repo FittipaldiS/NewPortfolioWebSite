@@ -1,17 +1,17 @@
 [
   {
     "name": "home",
-    "src": "images/woman-with-tablet.jpg",
+    "src": "images/sfondoDesktoPc2.jpg",
     "alt": "woman with glasses holding a tablet"
   },
   {
     "name": "about",
-    "src": "images/motion-background.jpg",
+    "src": "images/circuiti.jpg",
     "alt": "gray abstract background"
   },
   {
     "name": "portfolio",
-    "src": "images/design-desk.jpeg",
+    "src": "images/sfondoDesktoPc.jpg",
     "alt": "desktop with books and laptop"
   }
 ]

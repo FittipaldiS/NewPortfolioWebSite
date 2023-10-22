@@ -2,11 +2,15 @@
   "description": "Ich bin ein leidenschaftlicher Softwareentwickler für Microsoft-Technologien. Wenn ich nicht programmiere, reise ich gerne.",
   "skills": [
     ".Net",
-    "EF Core",
+    "EF Core 6",
     "C#",
-    "Asp.Net",
+    ".NET 6 MVC Asp.Net",
     "Blazor",
-    "Worker Service"
+    ".NET 6 Worker Service",
+    "WPF",
+    "Git",
+    "Git Hub",
+    "LPIC-1 Linux"
   ],
   "detailOrQuote": "Ich mag nach technologischen Lösungen suchen, um Geschäftsprozesse durch Automatisierung zu vereinfachen."
 }

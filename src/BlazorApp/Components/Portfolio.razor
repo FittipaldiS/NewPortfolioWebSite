@@ -1,32 +1,36 @@
 <section class="light" id="portfolio">
     <h2>Portfolio</h2>
-    <div class="portfolio-container">
-    @if (projects is null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else
-    {
-        <div class="portfolio-hero">
-            @if (hero is not null)
+    <div class="w3-container">
+        <div class="portfolio-container">
+            @if (projects is null)
             {
-                <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
-                    alt="@(hero.Alt)" />
+                <p><em>Loading...</em></p>
             }
-        </div>
-        <div class="container">
-            @foreach (var project in projects)
+            else
             {
-                <div class="box" key="@project.Title">
-                    <a href="@project.Url" target="_blank" rel="noopener noreferrer">
-                        <h3 style="flex-basis: 40px;">@project.Title</h3>
-                    </a>
-                    <p class="small">@project.Description</p>
+
+                <div class="portfolio-hero">
+                    @if (hero is not null)
+                    {
+                        <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;"
+                             alt="@(hero.Alt)" />
+                    }
+                </div>
+                <div class="container">
+                    @foreach (var project in projects)
+                    {
+                        <div class="box" key="@project.Title">
+                            <a href="@project.Url" target="_blank" rel="noopener noreferrer">
+                                <h3 style="flex-basis: 40px;">@project.Title</h3>
+                            </a>
+                            <p class="small">@project.Description</p>
+                        </div>
+                    }
                 </div>
             }
         </div>
-    }
     </div>
+
 </section>
 
 @code {

@@ -3,22 +3,26 @@
     {
         <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
     }
-    <div style="position: absolute; top: 30%; left: 2rem;">
-    @if (property is null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else
-    {
-        <h1>@property.Name</h1>
-        <h2>@property.Title</h2>
-    }
+
+    <div class="w3-container">
+        <div style="position: absolute; top: 30%; left: 2rem;">
+            @if (property is null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <h1>@property.Name</h1>
+                <h2>@property.Title</h2>
+            }
+        </div>
+        <div style="position: absolute; bottom: 8rem; left: 50%;">
+            <a href="#about" target="_top">
+                <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
+            </a>
+        </div>
     </div>
-    <div style="position: absolute; bottom: 8rem; left: 50%;">
-        <a href="#about" target="_top">
-            <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
-        </a>
-    </div>
+
 </section>
 
 @code {

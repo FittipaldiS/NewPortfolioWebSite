@@ -6,4 +6,5 @@ public class AboutMe
     public List<string> Skills { get; set; } = new();
     public string DetailOrQuote { get; set; } = string.Empty;
     public string AboutTitle { get; set; } = string.Empty;
+    public string AboutTitleIT { get; set; } = string.Empty;
 }

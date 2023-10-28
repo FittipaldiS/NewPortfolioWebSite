@@ -3,7 +3,10 @@
     {
         <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
     }
-    <h2>About Myself</h2>
+    @if (aboutMe is not null)
+    {
+        <h2>@aboutMe.AboutTitle</h2>
+    }
 
     <div class="w3-container  w3-padding-64">
 

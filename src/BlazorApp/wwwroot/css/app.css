@@ -4,7 +4,7 @@
 
 /*@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");*/
 
-/*@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
 @import url('https://www.w3schools.com/w3css/4/w3.css');
 
@@ -14,7 +14,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 div#main {
@@ -57,17 +57,17 @@ div#main {
             object-fit: cover;
         }
 
-    h1 {
-        font-weight: 300;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 7rem;
-        margin: 0;
-    }
+h1 {
+    font-weight: 300;
+    font-family: 'Pixelify Sans', serif;
+    font-size: 7rem;
+    margin: 0;
+}
 
     @media screen and (max-width: 300px) {
         h1 {
             font-weight: 300;
-            font-family: "Cormorant Garamond", serif;
+            font-family: 'Pixelify Sans', serif;
             font-size: 3rem;
             margin: 0;
         }
@@ -76,7 +76,7 @@ div#main {
     @media screen and (min-width: 301px) and (max-width: 360px) {
         h1 {
             font-weight: 300;
-            font-family: "Cormorant Garamond", serif;
+            font-family: 'Pixelify Sans', serif;
             font-size: 4rem;
             margin: 0;
         }
@@ -85,7 +85,7 @@ div#main {
     @media screen and (min-width: 361px) and (max-width: 420px) {
         h1 {
             font-weight: 300;
-            font-family: "Cormorant Garamond", serif;
+            font-family: 'Pixelify Sans', serif;
             font-size: 5rem;
             margin: 0;
         }
@@ -109,18 +109,20 @@ div#main {
         }
     }
 
-    h2 {
-        font-weight: 400;
-        font-size: 2rem;
-        margin: 0;
-        text-align: center;
-    }
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    font-family: 'Pixelify Sans', serif;
+}
 
-    h3 {
-        font-weight: 400;
-        font-size: 1.25rem;
-        margin: 0;
-    }
+h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 0;
+    font-family: 'Pixelify Sans', serif;
+}
 
     p {
         font-size: 18px;

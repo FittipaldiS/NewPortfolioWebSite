@@ -19,14 +19,12 @@
             else
             {
                 <p>@aboutMe.Description</p>
-                <hr />
-                <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem;">
+                <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem; " class="w3-ul w3-card-4">
                     @foreach (var skill in aboutMe.Skills)
                     {
                         <li key="@skill">@skill</li>
                     }
                 </ul>
-                <hr />
                 <p style="padding: 1rem 3rem 0;">@aboutMe.DetailOrQuote</p>
             }
         </div>

@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 @import url('https://www.w3schools.com/w3css/4/w3.css');
 
 html,
@@ -14,7 +16,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Anton Display', sans-serif;
 }
 
 div#main {
@@ -59,7 +61,7 @@ div#main {
 
 h1 {
     font-weight: 300;
-    font-family: 'Pixelify Sans', serif;
+    font-family: 'Anton Display', serif;
     font-size: 7rem;
     margin: 0;
 }

@@ -5,8 +5,8 @@
     "url": "https://github.com/FittipaldiS/NewPortfolioWebSite"
   },
   {
-    "title": "Worker service to send info pc per Email",
-    "description": "Programmierung eines Worker-Dienstes, der in der Lage ist, alle 5 Minuten eine E-Mail mit einer Excel-Datei, die die Daten unseres PCs enthält, zu senden.",
+    "title": "Mehrere mit verschiedenen Microsoft-Technologien erstellte Projekte",
+    "description": "Programmierung eines Worker-Dienstes, der in der Lage ist, alle 5 Minuten eine E-Mail mit einer Excel-Datei, die die Daten unseres PCs enthält, zu senden. Projekte infoPcTools zur Anzeige der PC-Temperatur und anderer Informationen",
     "url": "https://github.com/FittipaldiS/Public.SimoneFittipaldi.Portfolio"
   }
   ,
@@ -16,8 +16,8 @@
     "url": "https://github.com/FittipaldiS/SportsSuperstore"
   },
   {
-    "title": "Work in progress",
-    "description": "",
-    "url": ""
+    "title": "GameC-Terminal",
+    "description": "Realisierung kleiner Spiele mit Hilfe von Konsolenanwendungen",
+    "url": "https://github.com/FittipaldiS/GameC-Teminal"
   }
 ]

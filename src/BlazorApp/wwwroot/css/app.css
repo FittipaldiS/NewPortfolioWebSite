@@ -69,7 +69,7 @@ h1 {
     @media screen and (max-width: 300px) {
         h1 {
             font-weight: 300;
-            font-family: 'Pixelify Sans', serif;
+            font-family: 'Anton Display', serif;
             font-size: 3rem;
             margin: 0;
         }
@@ -78,7 +78,7 @@ h1 {
     @media screen and (min-width: 301px) and (max-width: 360px) {
         h1 {
             font-weight: 300;
-            font-family: 'Pixelify Sans', serif;
+            font-family: 'Anton Display', serif;
             font-size: 4rem;
             margin: 0;
         }
@@ -87,7 +87,7 @@ h1 {
     @media screen and (min-width: 361px) and (max-width: 420px) {
         h1 {
             font-weight: 300;
-            font-family: 'Pixelify Sans', serif;
+            font-family: 'Anton Display', serif;
             font-size: 5rem;
             margin: 0;
         }
@@ -116,14 +116,14 @@ h2 {
     font-size: 2rem;
     margin: 0;
     text-align: center;
-    font-family: 'Pixelify Sans', serif;
+    font-family: 'Anton Display', serif;
 }
 
 h3 {
     font-weight: 400;
     font-size: 1.25rem;
     margin: 0;
-    font-family: 'Pixelify Sans', serif;
+    font-family: 'Anton Display', serif;
 }
 
     p {

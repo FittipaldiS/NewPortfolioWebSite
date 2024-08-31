@@ -1,16 +1,18 @@
 {
-  "description": "Ich bin Simone Fittipaldi und stamme ursprünglich aus Italien, lebe jedoch bereits seit 9 Jahren in Deutschland. Am 10.02.2020 habe ich eine Weiterbildung zum Fachinformatiker an der BITLC-Schule begonnen und erfolgreich die IHK-Prüfung abgelegt. Derzeit arbeite ich bei einer Logistikfirma und bin für die Entwicklung spezieller Tools zur Automatisierung von logistischen Geschäftsprozessen verantwortlich.",
+  "description": "Hallo, mein Name ist Simone und ich liebe es zu programmieren. Ich entdecke gerne neue Technologien und wende sie sowohl bei der Arbeit als auch im Alltag an. Ich liebe es zu reisen und ins Kino zu gehen, und ich bin leidenschaftlich an Videospielen und Musik interessiert.",
   "skills": [
     ".Net",
-    "EF Core 6",
+    "EF Core",
     "C#",
     ".NET 6 MVC Asp.Net",
     "Blazor",
-    ".NET 6 Worker Service",
+    ".NET Worker Service",
     "WPF",
     "Git",
     "Git Hub",
-    "LPIC-1 Linux"
+    "LPIC-1 Linux",
+    "API",
+    "SQL"
   ],
   "detailOrQuote": "Ich mag nach technologischen Lösungen suchen, um Geschäftsprozesse durch Automatisierung zu vereinfachen.",
   "aboutTitle": "Über mich",

@@ -1,8 +1,8 @@
 <section class="dark" id="about">
 
-    @if (hero is not null)
+    @if (jpgImage is not null)
     {
-        <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
+        <img class="background" src="@(jpgImage.Src)" alt="@(jpgImage.Alt)" />
     }
     @if (aboutMe is not null)
     {
@@ -40,12 +40,12 @@
     public required HeroImageService HeroImageService { get; set; }
 
     private AboutMe? aboutMe;
-    private HeroImage? hero;
+    private HeroImage? jpgImage;
 
     protected override async Task OnInitializedAsync()
     {
         aboutMe = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
-        hero = await HeroImageService.GetHeroAsync(img => img.Name is "about");
+        jpgImage = await HeroImageService.GetHeroAsync(img => img.Name is "about");
 
     }
 }

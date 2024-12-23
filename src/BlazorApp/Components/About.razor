@@ -18,18 +18,37 @@
             }
             else
             {
-                <p>@aboutMe.Description</p>
-                <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem; " class="w3-ul w3-card-4">
-                    @foreach (var skill in aboutMe.Skills)
-                    {
-                        <li key="@skill">@skill</li>
-                    }
-                </ul>
+                @* <p>@aboutMe.Description</p> *@
+                @*  <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem; " class="w3-ul w3-card-4"> *@
+
+                <div class="w3-row">
+                    <div class="w3-third w3-card-4">
+                        @if (pgImage is not null)
+                        {
+                            <img src="@(pgImage.Src)" style="height: 90%; width: 100%;"
+                                 alt="@(pgImage.Alt)" />
+                        }
+                    </div>
+                    <div class="w3-third w3-container">
+                        <h2>Hey</h2>
+                        <p>@aboutMe.Description</p>
+                    </div>
+                    <div class="w3-third w3-container">
+                        <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem; " class="w3-ul w3-card-4">
+                            @foreach (var skill in aboutMe.Skills)
+                            {
+                                <li key="@skill">@skill</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+
+                @*            </ul> *@
                 <p style="padding: 1rem 3rem 0;">@aboutMe.DetailOrQuote</p>
             }
         </div>
     </div>
-   
+
 </section>
 
 @code {
@@ -41,11 +60,13 @@
 
     private AboutMe? aboutMe;
     private HeroImage? jpgImage;
+    private HeroImage? pgImage;
 
     protected override async Task OnInitializedAsync()
     {
         aboutMe = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
         jpgImage = await HeroImageService.GetHeroAsync(img => img.Name is "about");
+        pgImage = await HeroImageService.GetHeroAsync(img => img.Name == "portfolio");
 
     }
 }

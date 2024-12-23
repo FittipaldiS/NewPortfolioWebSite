@@ -10,7 +10,7 @@
             }
             else
             {
-                <div class="portfolio-hero">
+                <div class="w3-container">
                     @if (pgImage is not null)
                     {
                         <img src="@(pgImage.Src)" style="height: 90%; width: 100%; object-fit: cover;"
@@ -21,20 +21,11 @@
                     @foreach (var project in projects)
                     {
                         <div class="w3-container w3-card-4 w3-sand w3-section" key="@project.Title">
-                            @if (project.Title == "Download HomeOfficeCalendar")
-                            {
-                                <a @onclick="DownloadHomeCalendar" style="cursor: pointer;">
-                                    <h3 style="flex-basis: 40px;">@project.Title</h3>
-                                </a>
-                                <p class="small">@project.Description</p>
-                            }
-                            else
-                            {
-                                <a href="@project.Url" target="_blank" rel="noopener noreferrer">
-                                    <h3 style="flex-basis: 40px;">@project.Title</h3>
-                                </a>
-                                <p class="small">@project.Description</p>
-                            }
+
+                            <a href="@project.Url" target="_blank" rel="noopener noreferrer">
+                                <h3 style="flex-basis: 40px;">@project.Title</h3>
+                            </a>
+                            <p class="small">@project.Description</p>
                         </div>
                     }
                 </div>
@@ -57,33 +48,5 @@
     {
         projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/projects.json");
         pgImage = await HeroImageService.GetHeroAsync(img => img.Name == "portfolio");
-    }
-
-    private async Task DownloadHomeCalendar()
-    {
-        var fileUrl = @"https://github.com/FittipaldiS/HomeOfficeCalendar/releases/download/relase2024/HomeOfficeCalendar.WPF.zip";
-        var isAvailable = await CheckFileAvailabilityAsync(fileUrl);
-
-        if (isAvailable)
-        {
-            await JS.InvokeVoidAsync("open", fileUrl, "_blank");
-        }
-        else
-        {
-            Console.WriteLine("File non disponibile.");
-        }
-    }
-
-    private async Task<bool> CheckFileAvailabilityAsync(string fileUrl)
-    {
-        try
-        {
-            var response = await Http.GetAsync(fileUrl);
-            return response.IsSuccessStatusCode;
-        }
-        catch
-        {
-            return false;
-        }
     }
 }

@@ -4,10 +4,7 @@
     {
         <img class="background" src="@(jpgImage.Src)" alt="@(jpgImage.Alt)" />
     }
-    @if (aboutMe is not null)
-    {
-        <h2>@aboutMe.AboutTitle</h2>
-    }
+ 
 
     <div class="w3-container">
 
@@ -18,8 +15,6 @@
             }
             else
             {
-                @* <p>@aboutMe.Description</p> *@
-                @*  <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem; " class="w3-ul w3-card-4"> *@
 
                 <div class="w3-row">
                     <div class="w3-third w3-card-4">
@@ -30,10 +25,11 @@
                         }
                     </div>
                     <div class="w3-third w3-container">
-                        <h2>Hey</h2>
+                        <h2>@aboutMe.AboutTitle</h2>
                         <p>@aboutMe.Description</p>
                     </div>
                     <div class="w3-third w3-container">
+                        <h2>Skills</h2>
                         <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem; " class="w3-ul w3-card-4">
                             @foreach (var skill in aboutMe.Skills)
                             {
@@ -42,8 +38,6 @@
                         </ul>
                     </div>
                 </div>
-
-                @*            </ul> *@
                 <p style="padding: 1rem 3rem 0;">@aboutMe.DetailOrQuote</p>
             }
         </div>

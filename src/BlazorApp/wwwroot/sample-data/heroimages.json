@@ -1,7 +1,7 @@
 [
   {
     "name": "home",
-    "src": "images/sfondoDesktoPc2.jpg",
+    "src": "images/KranHausKöln.jpg",
     "alt": "woman with glasses holding a tablet"
   },
   {
@@ -13,5 +13,11 @@
     "name": "portfolio",
     "src": "images/SimoneFittipaldi.jpg",
     "alt": "my"
+  },
+  {
+    "name": "sfondoPc",
+    "src": "images/SfondoComputerCasa.jpg",
+    "alt": "my"
   }
+
 ]

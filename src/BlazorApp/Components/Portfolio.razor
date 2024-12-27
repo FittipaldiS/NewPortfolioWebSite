@@ -13,7 +13,7 @@
                 <div class="w3-container">
                     @if (pgImage is not null)
                     {
-                        <img src="@(pgImage.Src)" style="height: 90%; width: 100%; object-fit: cover;"
+                             <img src="@(pgImage.Src)" style="height: 90%; width: 100%;" class="w3-grayscale"
                              alt="@(pgImage.Alt)" />
                     }
                 </div>
@@ -47,6 +47,7 @@
     protected override async Task OnInitializedAsync()
     {
         projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/projects.json");
-        pgImage = await HeroImageService.GetHeroAsync(img => img.Name == "portfolio");
+        pgImage = await HeroImageService.GetHeroAsync(img => img.Name == "sfondoPc");
+
     }
 }

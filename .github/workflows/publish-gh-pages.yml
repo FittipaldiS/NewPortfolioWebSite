@@ -26,29 +26,24 @@ jobs:
         dotnet-version: '8.x'
 
     - name: Restore NuGet packages
-      shell: bash
-      run: |
-        dotnet restore .
+      run: dotnet restore .
 
     - name: Build solution
-      shell: bash
-      run: |
-        dotnet build .
+      run: dotnet build .
 
     - name: Test solution
-      shell: bash
-      run: |
-        dotnet test . -c Release
+      run: dotnet test . -c Release
 
     - name: Publish artifact
-      shell: bash
-      run: |
-        dotnet publish src/BlazorApp -c Release -o published
+      run: dotnet publish -c Release -o published
+
+    - name: List published files
+      run: ls -R published/wwwroot
 
     - name: Upload artifact for web
       uses: actions/upload-pages-artifact@v1
       with:
-        path: published/wwwroot
+        path: published
 
   deploy:
     name: Deploy App to GitHub Pages

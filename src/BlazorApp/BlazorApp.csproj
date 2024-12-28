@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -9,6 +9,10 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\css\style.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\Home.razor.css" />
   </ItemGroup>
 
   <ItemGroup>

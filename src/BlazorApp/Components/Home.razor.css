@@ -1,8 +1,10 @@
 
 
-#home {
-    background-color: #3b3d54;
-}
+/*#home {
+    background-color: #3b3d54;*/
+   /* color: white;*/
+/*}*/
+
 
 * {
     box-sizing: border-box;
@@ -41,6 +43,14 @@ body {
         font-weight: 900;
         font-style: italic;
         color: #dad8ec;
+    }
+
+    .page h1 {
+        font-weight: lighter;
+        font-size: 3.5vw;
+        font-weight: 900;
+        font-style: revert;
+        color: #7ceaa4;
     }
 
 .svg {

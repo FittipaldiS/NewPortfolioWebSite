@@ -1,21 +1,30 @@
 <section class="dark" id="home">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfolio Simone Fittipaldi</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-        <link rel="stylesheet" href="./css/style.scss">
+@*     @if (hero is not null)
+    {
+        <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
+    } *@
 
-    </head>
-    <body>
-        <!-- partial:index.partial.html -->
-        <div class='page'>
-            Software Developer
-            <h2>
-                Simone Fittipaldi
-            </h2>
-            <br>
+    <div class="w3-container ;">
+        <div class="page" style="vertical-align:central;  margin-top:5rem">
+           
+            @if (property is null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <h1>@property.Title</h1>
+
+                <h2>@property.Name</h2>
+            }
         </div>
+        <div style="position: absolute; bottom: 8rem; left: 50%; z-index: 100;">
+            <a href="#about" target="_top">
+                <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
+            </a>
+        </div>
+    </div>
 
         <div class="wrap">
             <svg class="svg" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +65,6 @@
         </div>
         <!-- partial -->
 
-    </body>
 
 </section>
 

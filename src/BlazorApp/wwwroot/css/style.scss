@@ -6,39 +6,70 @@ $purple: #3b3d54;
 *{
   box-sizing: border-box;
 }
+section {
+    position: relative;
+}
 
-body{
-	font-family: 'Playfair Display', serif;
-	color: rgba(172,170,190, 1);
-	text-rendering: optimizeLegibility;
-	font-smooth: always;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: $purple;
-	font-size: 14px;
-	overflow: hidden;
+section.dark {
+    min-height: 100vh;
+    color: #3b3d54;
+    background: #3b3d54;
+}
+
+section.light {
+    color: #3b3d54;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 8rem 0;
+}
+
+section img.background {
+    width: 100vmax;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: rgba(172,170,190, 1);
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $purple;
+    font-size: 14px;
+    /*	overflow: hidden;*/
+    /*overflow-y: auto*/
 }
 
 .wrap{
 	perspective-origin: 50% 50%;
 }
 
-.page{
-	margin: 3%;
-	max-width:600px;
-	margin-left:auto;
-	margin-right: auto;
-	padding: 30px;
-	border-radius: 3px;
-	text-align:center;
-	font-size: 1.4vw;
-	h2{
-		font-weight: bold;
-		font-size: 6.5vw;
-		font-weight: 900;
-		font-style: italic;
-		color:#dad8ec;
-	}
+.page {
+    margin: 3%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1.4vw;
+
+    h2 {
+        font-weight: bold;
+        font-size: 6.5vw;
+        font-weight: 900;
+        font-style: italic;
+        color: #dad8ec;
+    }
+
+
 }
 
 .svg{

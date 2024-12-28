@@ -26,19 +26,24 @@ jobs:
         dotnet-version: '7.x'
 
     - name: Restore NuGet packages
-      run: dotnet restore .
+      shell: bash
+      run: |
+        dotnet restore .
 
     - name: Build solution
-      run: dotnet build .
+      shell: bash
+      run: |
+        dotnet build .
 
     - name: Test solution
-      run: dotnet test . -c Release
+      shell: bash
+      run: |
+        dotnet test . -c Release
 
     - name: Publish artifact
-      run: dotnet publish src/BlazorApp -c Release -o published
-
-    - name: Set file permissions
-      run: chmod -R 744 published/wwwroot
+      shell: bash
+      run: |
+        dotnet publish src/BlazorApp -c Release -o published
 
     - name: Upload artifact for web
       uses: actions/upload-pages-artifact@v1

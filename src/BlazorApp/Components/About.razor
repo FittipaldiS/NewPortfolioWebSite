@@ -28,12 +28,12 @@
                         <h2>@aboutMe.AboutTitle</h2>
                         <p>@aboutMe.Description</p>
                     </div>
-                    <div class="w3-third ">
+                    <div class="w3-third">
                         <h2>Skills</h2>
-                        <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem; " class="w3-ul w3-card-4">
+                        <ul style="columns: 2; list-style-type:disc">
                             @foreach (var skill in aboutMe.Skills)
                             {
-                                <li key="@skill">@skill</li>
+                                <li key="@skill"><p>@skill</p></li>
                             }
                         </ul>
                     </div>

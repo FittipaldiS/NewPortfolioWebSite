@@ -94,7 +94,31 @@ section {
         font-weight: 900;
         font-style: revert;
         color: #7ceaa4;
+        font-family: 'Playfair Display', sans-serif;
     }
+
+@media screen and (max-width: 400px) {
+    .page h2 {
+        font-weight: lighter;
+        font-size: 20.5vw;
+        font-weight: 900;
+        font-style: revert;
+        color: #dad8ec;
+    
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .page h1 {
+        font-weight: lighter;
+        font-size: 8.5vw;
+        font-weight: 900;
+        font-style: revert;
+        color: #7ceaa4;
+        margin-top: 35vw;
+        font-family: 'Playfair Display', sans-serif;
+    }
+}
 
     .page p {
         font-weight: lighter;
@@ -111,19 +135,46 @@ body h2 {
     color: #7ceaa4;
 }
 
+body h1 {
+    font-weight: 900;
+    font-size: 12.5vw;
+    font-style: italic;
+    color: #7ceaa4;
+    font-family: 'Playfair Display', sans-serif !important;
+}
+
 body p {
-    font-size: 2.5vw;
- /*   font-weight: 900;*/
+    font-size: 2.0vw;
     font-style: italic;
     color: #dad8ec;
     margin-bottom: 10px;
     margin-top: 10px;
-    font-family: 'Playfair Display', serif !important;
+    font-family: 'Playfair Display', sans-serif;
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', serif !important;
+@media screen and (max-width: 400px) {
+    .body h2 {
+        font-weight: 900;
+        font-size: 5.5vw !important;
+        font-style: italic;
+        color: #dad8ec;
+    }
 }
+
+@media screen and (max-width: 400px) {
+    .body h1 {
+        font-weight: 900;
+        font-size: 5.5vw !important;
+        font-style: italic;
+        color: #7ceaa4;
+    }
+}
+
+
+
+/*h1, h2 {
+    font-family: 'Playfair Display', serif !important;
+}*/
 
 hr {
     margin: 2.5rem;

@@ -1,0 +1,23 @@
+[
+  {
+    "title": ".NET Blazor My Portfolio",
+    "description": "Erstellung dieses Portfolios mit Blazor-Technologie mithilfe des freies Projekts auf GitHub: education/codespaces-project-template-dotnet.",
+    "url": "https://github.com/FittipaldiS/NewPortfolioWebSite"
+  },
+  {
+    "title": "WPF HomeOfficeCalendar in MVVM",
+    "description": "Das Kalenderprogramm Home Office kann Homeoffice-Tage und normale Arbeitstage basierend auf dem prozentualen Anteil an Homeoffice berechnen, den Sie als Regel für das Arbeiten im Büro festgelegt haben.",
+    "url": "https://github.com/FittipaldiS/HomeOfficeCalendar"
+  }
+  ,
+  {
+    "title": "Super Store .Net Core 3.1",
+    "description": "Projekt eines Sportgeschäfts mit CRUD-Operationen, Berechnung des Gesamtpreises der Artikel, Fortsetzung mit Einkäufen und Auswahl der Geschäftsabteilungen.",
+    "url": "https://github.com/FittipaldiS/SportsSuperstore"
+  },
+  {
+    "title": "GameC-Terminal",
+    "description": "Realisierung kleiner Spiele mit Hilfe von Konsolenanwendungen",
+    "url": "https://github.com/FittipaldiS/GameC-Teminal"
+  }
+]

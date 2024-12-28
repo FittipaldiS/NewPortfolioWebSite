@@ -1,0 +1,26 @@
+{
+  "description": "Hallo, mein Name ist Simone und ich liebe es zu programmieren. Ich entdecke gerne neue Technologien und wende sie sowohl bei der Arbeit als auch im Alltag an. Ich liebe es zu reisen und ins Kino zu gehen, und ich bin leidenschaftlich an Videospielen und Musik interessiert.",
+  "skills": [
+    ".Net",
+    "EF Core",
+    "C#",
+    ".NET 6 MVC Asp.Net",
+    "Blazor",
+    ".NET Worker Service",
+    "WPF",
+    "Git",
+    "Git Hub",
+    "LPIC-1 Linux",
+    "API",
+    "SQL",
+    "Javascript",
+    "Dev Express",
+    "Synchfusion",
+    "Visual Basic",
+    "Web Forms"
+  ],
+  "detailOrQuote": "full stack developer",
+  "aboutTitle": "Über mich",
+  "aboutTitleIT": "Chi sono"
+
+}

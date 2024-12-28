@@ -1,0 +1,23 @@
+[
+  {
+    "name": "home",
+    "src": "images/KranHausKöln.jpg",
+    "alt": "woman with glasses holding a tablet"
+  },
+  {
+    "name": "about",
+    "src": "images/circuiti.jpg",
+    "alt": "gray abstract background"
+  },
+  {
+    "name": "portfolio",
+    "src": "images/SimoneFittipaldi.jpg",
+    "alt": "my"
+  },
+  {
+    "name": "sfondoPc",
+    "src": "images/SfondoComputerCasa.jpg",
+    "alt": "my"
+  }
+
+]

@@ -23,7 +23,7 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: '7.x'
+          dotnet-version: '8.x'
 
       # Uncomment if you need to set basepath on index.html
       # - name: Set basepath on index.html

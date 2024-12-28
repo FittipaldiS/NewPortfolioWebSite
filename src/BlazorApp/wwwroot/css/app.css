@@ -96,106 +96,36 @@ section {
         color: #7ceaa4;
     }
 
-/*
-h1 {
-    font-weight: 300;
-    font-family: 'Anton Display', serif;
-    font-size: 7rem;
-    margin: 0;
-}*/
-
-/*@media screen and (max-width: 300px) {
-    h1 {
-        font-weight: 300;
-        font-family: 'Anton Display', serif;
-        font-size: 3rem;
-        margin: 0;
+    .page p {
+        font-weight: lighter;
+        font-size: 3.5vw;
+        font-weight: 900;
+        font-style: revert;
+        color: #7ceaa4;
     }
-}
 
-@media screen and (min-width: 301px) and (max-width: 360px) {
-    h1 {
-        font-weight: 300;
-        font-family: 'Anton Display', serif;
-        font-size: 4rem;
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 361px) and (max-width: 420px) {
-    h1 {
-        font-weight: 300;
-        font-family: 'Anton Display', serif;
-        font-size: 5rem;
-        margin: 0;
-    }
-}*/
-
-/*@media only screen and (max-width: 600px) {
-    p {
-        font-size: 10px;
-        line-height: 0.5;
-        margin-bottom: 0;
-        font-weight: 200;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    p.large {
-        font-size: 6px;
-        line-height: 1.5;
-        margin-bottom: 0;
-        font-weight: 100;
-    }
-}*/
-
-/*h2 {
-    font-weight: 400;
-    font-size: 2rem;
-    margin: 0;
-    text-align: center;
-    font-family: 'Anton Display', serif;
-}*/
-/*
 h2 {
     font-weight: bold;
     font-size: 6.5vw;
     font-weight: 900;
     font-style: italic;
-    color: #dad8ec;
+    color: #7ceaa4;
 }
-
-h3 {
-    font-weight: 400;
-    font-size: 1.25rem;
-    margin: 0;
-    font-family: 'Anton Display', serif;
-}
-*/
-/*p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 0;
-    font-weight: 300;
-}*/
 
 p {
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 6.5vw;
     font-weight: 900;
     font-style: italic;
     color: #dad8ec;
     margin-bottom: 10px;
-    margin-top: 10px
+    margin-top: 10px ;
+    font-family: 'Playfair Display', serif !important;
 }
 
-    p.large {
-        font-size: 24px;
-    }
-
-    p.small {
-        font-size: 15px;
-    }
+h1, h2 {
+    font-family: 'Playfair Display', serif !important;
+}
 
 hr {
     margin: 2.5rem;

@@ -8,14 +8,17 @@
             }
             else
             {
-                <div class="w3-container">
+                <div class="page">
                     @if (pgImage is not null)
                     {
-                             <img src="@(pgImage.Src)" style="height: 90%; width: 60%;" class="w3-grayscale"
-                             alt="@(pgImage.Alt)" />
+                        <div class="w3-third w3-card-4">
+                            <img src="@(pgImage.Src)" style="height: 90%; width: 100%;" class="w3-grayscale"
+                                 alt="@(pgImage.Alt)" />
+                        </div>
+                           
                     }
                 </div>
-                <div class="container">
+                <div class="w3-third w3-card-4">
                     @foreach (var project in projects)
                     {
                         <div class="w3-container w3-card-4 w3-sand w3-section" key="@project.Title">

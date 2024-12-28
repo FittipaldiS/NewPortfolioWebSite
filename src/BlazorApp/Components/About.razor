@@ -6,9 +6,9 @@
     @*     <img class="background" src="@(jpgImage.Src)" alt="@(jpgImage.Alt)" /> *@
     }
 
-    <div class="w3-container ">
+    <div class="w3-container">
 
-        <div class="w3-panel w3-card-4 w3-center w3-white w3-padding-64 ">
+        <div class="w w3-padding-64 ">
             @if (aboutMe is null)
             {
                 <p><em>Loading...</em></p>
@@ -16,19 +16,19 @@
             else
             {
 
-                <div class="w3-row ">
-                    <div class="w3-third w3-card-4">
+                <div class="w3-row">
+                    <div class="w3-third">
                         @if (pgImage is not null)
                         {
                             <img src="@(pgImage.Src)" style="height: 90%; width: 100%;"
                                  alt="@(pgImage.Alt)" />
                         }
                     </div>
-                    <div class="w3-third w3-container">
+                    <div class="w3-third">
                         <h2>@aboutMe.AboutTitle</h2>
                         <p>@aboutMe.Description</p>
                     </div>
-                    <div class="w3-third w3-container">
+                    <div class="w3-third ">
                         <h2>Skills</h2>
                         <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem; " class="w3-ul w3-card-4">
                             @foreach (var skill in aboutMe.Skills)

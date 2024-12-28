@@ -104,22 +104,20 @@ section {
         color: #7ceaa4;
     }
 
-h2 {
-    font-weight: bold;
-    font-size: 6.5vw;
+body h2 {
     font-weight: 900;
+    font-size: 2.5vw;
     font-style: italic;
     color: #7ceaa4;
 }
 
-p {
-    font-weight: bold;
-    font-size: 6.5vw;
-    font-weight: 900;
+body p {
+    font-size: 2.5vw;
+ /*   font-weight: 900;*/
     font-style: italic;
     color: #dad8ec;
     margin-bottom: 10px;
-    margin-top: 10px ;
+    margin-top: 10px;
     font-family: 'Playfair Display', serif !important;
 }
 

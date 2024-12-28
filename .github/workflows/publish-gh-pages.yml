@@ -34,8 +34,9 @@ jobs:
     - name: Test solution
       run: dotnet test . -c Release
 
-    - name: Publish artifact
-      run: dotnet publish -c Release -o published
+    - name: Publish Blazor project
+      run: |
+        dotnet publish src/BlazorApp/BlazorApp.csproj -c Release -o published
 
     - name: List published files
       run: ls -R published/wwwroot

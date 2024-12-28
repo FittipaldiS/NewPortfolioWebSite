@@ -1,6 +1,7 @@
 name: Publish Blazor App to GitHub Pages
 
-on: [ push, workflow_dispatch ]
+on: 
+  [ push, workflow_dispatch ]
 
 permissions:
   contents: write
@@ -15,47 +16,68 @@ jobs:
   build_test_artifact:
     name: Build App
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: '8.x'
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '7.x'
 
-    - name: Restore NuGet packages
-      run: dotnet restore .
+      # Uncomment if you need to set basepath on index.html
+      # - name: Set basepath on index.html
+      #   shell: pwsh
+      #   run: |
+      #     $filepath = "./src/BlazorApp/wwwroot/index.html"
+      #     $repository = "${{ github.repository }}" -replace "${{ github.repository_owner }}", ""
+      #     $html = Get-Content -Path $filepath
+      #     $html -replace "<base href=`"/`" />", "<base href=`"$repository/`" />" | Out-File -Path $filepath -Force
 
-    - name: Build solution
-      run: dotnet build .
+      # Uncomment if you need to set basepath on JSON objects
+      # - name: Set basepath on JSON objects
+      #   shell: pwsh
+      #   run: |
+      #     $filepath = "./src/BlazorApp/wwwroot/sample-data"
+      #     $repository = "${{ github.repository }}" -replace "${{ github.repository_owner }}", ""
+      #     Get-ChildItem -Path $filepath -Filter "*.json" | ForEach-Object {
+      #       $json = Get-Content -Path $_.FullName
+      #       $json.Replace("../", "$repository/") | Out-File -Path $_.FullName -Force
+      #     }
 
-    - name: Test solution
-      run: dotnet test . -c Release
+      - name: Restore NuGet packages
+        shell: bash
+        run: |
+          dotnet restore .
 
-    - name: Publish Blazor project
-      run: |
-        dotnet publish src/BlazorApp/BlazorApp.csproj -c Release -o published
+      - name: Build solution
+        shell: bash
+        run: |
+          dotnet build .
 
-    - name: List published files
-      run: ls -R published/wwwroot
+      - name: Test solution
+        shell: bash
+        run: |
+          dotnet test . -c Release
 
-    - name: Upload artifact for web
-      uses: actions/upload-pages-artifact@v1
-      with:
-        path: published
+      - name: Publish artifact
+        shell: bash
+        run: |
+          dotnet publish src/BlazorApp -c Release -o published
+
+      - name: Upload artifact for web
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: published/wwwroot
 
   deploy:
     name: Deploy App to GitHub Pages
     needs: build_test_artifact
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v1
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

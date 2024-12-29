@@ -1,35 +1,38 @@
-<section class="light" id="portfolio">
-    <h2>Portfolio</h2>
+<section class="dark" id="portfolio">
+    <h2 class="w3-left">Portfolio</h2>
     <div class="w3-container">
-        <div class="portfolio-container">
+        <div class="w3-row ">
             @if (projects is null)
             {
                 <p><em>Loading...</em></p>
             }
             else
             {
-                <div class="page">
-                    @if (pgImage is not null)
-                    {
-                        <div class="w3-third w3-card-4">
+                <div class="w3-padding-64">
+                    <div class="w3-card-4">
+                        @if (pgImage is not null)
+                        {
                             <img src="@(pgImage.Src)" style="height: 90%; width: 100%;" class="w3-grayscale"
                                  alt="@(pgImage.Alt)" />
-                        </div>
-                           
-                    }
+                        }
+                    </div>
+
                 </div>
-                <div class="w3-third w3-card-4">
+
+                <div class="w3-row-padding w3-center w3-margin-top">
                     @foreach (var project in projects)
                     {
-                        <div class="w3-container w3-card-4 w3-sand w3-section" key="@project.Title">
-
-                            <a href="@project.Url" target="_blank" rel="noopener noreferrer">
-                                <h3 style="flex-basis: 40px;">@project.Title</h3>
-                            </a>
-                            <p class="small">@project.Description</p>
+                        <div class="w3-third">
+                            <div class="w3-card w3-container w3-sand" style="min-height:360px">
+                                <a href="@project.Url" target="_blank" rel="noopener noreferrer">
+                                    <h2 style="flex-basis: 40px;">@project.Title</h2>
+                                </a>
+                                <p class="small">@project.Description</p>
+                            </div>
                         </div>
                     }
                 </div>
+
             }
         </div>
     </div>

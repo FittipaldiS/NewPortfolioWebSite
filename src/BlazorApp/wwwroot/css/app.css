@@ -133,6 +133,7 @@ body h2 {
     font-size: 2.5vw;
     font-style: italic;
     color: #7ceaa4;
+    font-family: 'Playfair Display', sans-serif !important
 }
 
 body h1 {
@@ -144,7 +145,7 @@ body h1 {
 }
 
 body p {
-    font-size: 2.0vw;
+    font-size: 1.2vw;
     font-style: italic;
     color: #dad8ec;
     margin-bottom: 10px;
@@ -153,28 +154,52 @@ body p {
 }
 
 @media screen and (max-width: 400px) {
-    .body h2 {
+    body h1, body h2, body p {
         font-weight: 900;
-        font-size: 5.5vw !important;
+        font-size: 5.5vw;
         font-style: italic;
-        color: #dad8ec;
     }
-}
 
-@media screen and (max-width: 400px) {
-    .body h1 {
-        font-weight: 900;
-        font-size: 5.5vw !important;
-        font-style: italic;
+    body h1 {
+        color: #7ceaa4;
+    }
+
+    body h2 {
         color: #7ceaa4;
     }
 }
 
+@media screen and (max-width: 912px) {
+    body h1, body h2, body p {
+        font-weight: 900;
+        font-size: 3.5vw;
+        font-style: italic;
+    }
 
+    body h1 {
+        color: #7ceaa4;
+    }
 
-/*h1, h2 {
-    font-family: 'Playfair Display', serif !important;
-}*/
+    body h2 {
+        color: #7ceaa4;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body h1, body h2, body p {
+        font-weight: 900;
+        font-size: 3.5vw;
+        font-style: italic;
+    }
+
+    body h1 {
+        color: #7ceaa4;
+    }
+
+    body h2 {
+        color: #7ceaa4;
+    }
+}
 
 hr {
     margin: 2.5rem;

@@ -22,6 +22,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #3b3d54;
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 div#main {

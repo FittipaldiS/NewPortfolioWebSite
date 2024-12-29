@@ -98,7 +98,7 @@ section {
         font-family: 'Playfair Display', sans-serif;
     }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .page h2 {
         font-weight: lighter;
         font-size: 20.5vw;
@@ -109,7 +109,7 @@ section {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .page h1 {
         font-weight: lighter;
         font-size: 8.5vw;
@@ -154,7 +154,7 @@ body p {
     font-family: 'Playfair Display', sans-serif;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     body h1, body h2, body p {
         font-weight: 900;
         font-size: 5.5vw;

@@ -1,7 +1,7 @@
-<section class="dark" id="portfolio">
-    <div class="w3-container">
+<section class="dark " id="portfolio">
+    <div class="w3-container ">
         <div class="w3-row">
-            <h2 class="w3-left w3-margin-bottom">Portfolio</h2>
+            <h2 class="w3-right w3-margin w3-padding-32">Portfolio</h2>
             @if (projects is null)
             {
                 <p><em>Loading...</em></p>
@@ -15,7 +15,7 @@
                         foreach (var project in projects)
                         {
                             <a href="@project.Url">
-                                <h2>@project.Title</h2>
+                                <h3>@project.Title</h3>
                             </a>
 
                             <button onclick="myFunction('Demo @count')" class="w3-button w3-block w3-left-align">Description</button>
@@ -35,7 +35,7 @@
 
     <script>
         function myFunction(id) {
-            console.log('porcodio' + id);
+            
             var x = document.getElementById(id);
             if (x) {
                 if (x.className.indexOf("w3-show") == -1) {

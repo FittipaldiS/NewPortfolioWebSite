@@ -1,32 +1,26 @@
+@inject NavigationManager MyNavigationManager
+
 <div id="header" >
-    <a href="#home" target="_top" class="w3-bar-item w3-button w3-hover-none">Home</a>
-    <a href="#about" target="_top" class="w3-bar-item w3-button w3-hover-none ">About</a>
-    <a href="#portfolio" target="_top"  class="w3-bar-item w3-button w3-hover-none">Portfolio</a>
-    <a href="#contact" target="_top"  class="w3-bar-item w3-button w3-hover-none ">Contact</a>
+    <a href="#home" class="@GetActiveClass("#home")" @onclick='() => SetActive("#home")'>Home</a>
+    <a href="#about" class="@GetActiveClass("#about")" @onclick='() => SetActive("#about")'>About</a>
+    <a href="#portfolio" class="@GetActiveClass("#portfolio")" @onclick='() => SetActive("#portfolio")'>Portfolio</a>
+    <a href="#contact" class="@GetActiveClass("#contact")" @onclick='() => SetActive("#contact")'>Contact</a>
 </div>
 
-<script>
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const links = document.querySelectorAll('#header a');
+@code {
+    private string ActiveHash { get; set; } = "#home";
 
-        function updateActiveLink() {
-            const currentHash = window.location.hash; // Ottieni l'hash attuale
-            links.forEach(link => {
-                if (link.hash === currentHash) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
-            });
-        }
+    private string GetActiveClass(string hash)
+    {
+        return ActiveHash == hash ? "active w3-bar-item w3-button w3-hover-none" : "w3-bar-item w3-button w3-hover-none";
+    }
 
-        // Imposta il link attivo iniziale
-        updateActiveLink();
+    private void SetActive(string hash)
+    {
+        ActiveHash = hash;
+        MyNavigationManager.NavigateTo(MyNavigationManager.Uri.Split('?')[0] + hash);
 
-        // Aggiorna il link attivo quando cambia l'hash
-        window.addEventListener('hashchange', updateActiveLink);
-    });
-
-
-</script>
+        StateHasChanged();
+    }
+}

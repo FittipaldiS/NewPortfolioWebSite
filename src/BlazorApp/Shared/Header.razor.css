@@ -21,5 +21,6 @@
         }
 
         #header a.active {
-            color: #7ceaa4 !important; /* Colore che rimane mentre il link è cliccato */
+            color: #7ceaa4 !important;
+            font-weight: bold;
         }

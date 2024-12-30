@@ -8,7 +8,7 @@
 
     <div class="w3-container">
 
-        <div class="w3-padding-64 ">
+        <div class="w3-padding-32 ">
             @if (aboutMe is null)
             {
                 <p><em>Loading...</em></p>
@@ -24,11 +24,11 @@
                                  alt="@(pgImage.Alt)" />
                         }
                     </div>
-                    <div class="w3-third w3-padding-64 ">
+                    <div class="w3-third w3-padding-32 ">
                         <h2 class="w3-mobile">@aboutMe.AboutTitle</h2>
                         <p class="w3-mobile">@aboutMe.Description</p>
                     </div>
-                    <div class="w3-third w3-padding-64 ">
+                    <div class="w3-third w3-padding-32 ">
                         <h2>Skills</h2>
                         <ul style="columns: 2; list-style-type:disc" class="w3-margin">
                             @foreach (var skill in aboutMe.Skills)

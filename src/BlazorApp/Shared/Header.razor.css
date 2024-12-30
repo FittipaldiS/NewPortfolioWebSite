@@ -1,11 +1,25 @@
 #header {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  background: unset;
-  padding: 1rem;
-  top: 0;
-  width: 100%;
-  z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 0rem;
+    background: unset;
+    padding: 1rem;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
+
+    #header a {
+        color: white; 
+        text-decoration: none; 
+        transition: color 0.3s ease; 
+    }
+
+        #header a:hover {
+            color: #7ceaa4 !important; 
+        }
+
+        #header a.active {
+            color: #7ceaa4 !important; /* Colore che rimane mentre il link è cliccato */
+        }

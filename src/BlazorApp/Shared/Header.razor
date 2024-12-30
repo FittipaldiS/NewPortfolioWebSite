@@ -1,6 +1,32 @@
-<div id="header" class="w3-bar">
-    <a href="#home" target="_top" class="w3-bar-item w3-button w3-hover-none w3-hover-border-green">Home</a>
-    <a href="#about" target="_top" class="w3-bar-item w3-button w3-hover-none w3-hover-border-green">About</a>
-    <a href="#portfolio" target="_top"  class="w3-bar-item w3-button w3-hover-none w3-hover-border-green">Portfolio</a>
-    <a href="#contact" target="_top"  class="w3-bar-item w3-button w3-hover-none w3-hover-border-green">Contact</a>
+<div id="header" >
+    <a href="#home" target="_top" class="w3-bar-item w3-button w3-hover-none">Home</a>
+    <a href="#about" target="_top" class="w3-bar-item w3-button w3-hover-none ">About</a>
+    <a href="#portfolio" target="_top"  class="w3-bar-item w3-button w3-hover-none">Portfolio</a>
+    <a href="#contact" target="_top"  class="w3-bar-item w3-button w3-hover-none ">Contact</a>
 </div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('#header a');
+
+        function updateActiveLink() {
+            const currentHash = window.location.hash; // Ottieni l'hash attuale
+            links.forEach(link => {
+                if (link.hash === currentHash) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
+        // Imposta il link attivo iniziale
+        updateActiveLink();
+
+        // Aggiorna il link attivo quando cambia l'hash
+        window.addEventListener('hashchange', updateActiveLink);
+    });
+
+
+</script>

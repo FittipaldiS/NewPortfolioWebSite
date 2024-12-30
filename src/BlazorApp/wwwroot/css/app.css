@@ -2,25 +2,19 @@
 * CSS file to hold styles that apply across the application
 */
 
-/*@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");*/
-
-/*@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');*/
-
-/*@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');*/
-
 @import url('https://www.w3schools.com/w3css/4/w3.css');
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i');
 
 html,
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
     color: rgba(172,170,190, 1);
     text-rendering: optimizeLegibility;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #3b3d54;
+    background-color: #3b3d54 !important;
     font-size: 14px;
     overflow-x: hidden;
 }
@@ -49,9 +43,12 @@ section {
     }
 
     section.light {
-        color: black;
-        background: rgba(255, 255, 255, 0.35);
+        color: white;
+       /* background: rgba(255, 255, 255, 0.35);*/
         padding: 8rem 0;
+        background-color: #3b3d54 !important;
+        min-height: 100vh;
+        font-family: 'Playfair Display';
     }
 
     section img.background {
@@ -87,6 +84,7 @@ section {
         font-weight: 900;
         font-style: italic;
         color: #dad8ec;
+        font-family: 'Playfair Display',serif;
     }
 
     .page h1 {
@@ -98,17 +96,19 @@ section {
         font-family: 'Playfair Display', sans-serif;
     }
 
+/*Title h1 Name*/
 @media screen and (max-width: 430px) {
     .page h2 {
-        font-weight: lighter;
-        font-size: 20.5vw;
+        font-weight: bold;
+        font-size: 18.5vw;
         font-weight: 900;
-        font-style: revert;
+        font-style: italic;
         color: #dad8ec;
-    
+        font-family: 'Playfair Display', serif;
     }
 }
 
+/*Title h1 softwareentwikler*/
 @media screen and (max-width: 430px) {
     .page h1 {
         font-weight: lighter;
@@ -134,7 +134,7 @@ body h2 {
     font-size: 2.5vw;
     font-style: italic;
     color: #7ceaa4;
-    font-family: 'Playfair Display', sans-serif !important
+    font-family: 'Playfair Display', serif !important
 }
 
 body h1 {
@@ -170,6 +170,7 @@ body p {
     }
 }
 
+
 @media screen and (max-width: 912px) {
     body h1, body h2, body p {
         font-weight: 900;
@@ -186,10 +187,11 @@ body p {
     }
 }
 
+/*mobile text about command portfolio*/
 @media screen and (max-width: 1024px) {
     body h1, body h2, body p {
         font-weight: 900;
-        font-size: 3.5vw;
+        font-size: 8.5vw;
         font-style: italic;
     }
 
@@ -199,6 +201,18 @@ body p {
 
     body h2 {
         color: #7ceaa4;
+    }
+
+    body h3 {
+        color: #7ceaa4;
+        font-size: 5.5vw;
+        font-style: revert;
+    }
+
+    body p {
+        color: white;
+        font-size: 5.5vw;
+        font-style: revert;
     }
 }
 

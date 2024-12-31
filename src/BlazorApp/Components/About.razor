@@ -1,14 +1,14 @@
-<section class="dark" id="about">
-
+<section class="dark w3-mobile" id="about">
+    <h2 class="w3-left w3-margin w3-padding-32 w3-mobile">@aboutMe.AboutTitle</h2>
 
     @if (jpgImage is not null)
     {
     @*     <img class="background" src="@(jpgImage.Src)" alt="@(jpgImage.Alt)" /> *@
     }
 
-    <div class="w3-container">
+    <div class="w3-container w3-mobile">
 
-        <div class="w3-padding-32 ">
+        <div class="w3-padding-32 w3-mobile">
             @if (aboutMe is null)
             {
                 <p><em>Loading...</em></p>
@@ -16,21 +16,21 @@
             else
             {
 
-                <div class="w3-row ">
-                    <div class="w3-third  w3-card-4  w3-margin-top ">
+                <div class="w3-container w3-mobile">
+                    <div class="w3-half w3-card-4  w3-margin-top ">
                         @if (pgImage is not null)
                         {
                             <img src="@(pgImage.Src)" style="height: 90%; width: 100%;"
                                  alt="@(pgImage.Alt)" />
                         }
                     </div>
-                    <div class="w3-third w3-padding-32 ">
-                        <h2 class="w3-mobile">@aboutMe.AboutTitle</h2>
+                    <div class="w3-container w3-half w3-padding-32 w3-mobile">
+                      @*   <h2 class="w3-mobile">@aboutMe.AboutTitle</h2> *@
                         <p class="w3-mobile">@aboutMe.Description</p>
                     </div>
-                    <div class="w3-third w3-padding-32 ">
+                    <div class="w3-half w3-padding-32 w3-mobile">
                         <h2>Skills</h2>
-                        <ul style="columns: 2; list-style-type:disc" class="w3-margin">
+                        <ul style="columns: 2; list-style-type:disc" class="w3-margin  w3-mobile">
                             @foreach (var skill in aboutMe.Skills)
                             {
                                 <li key="@skill"><p>@skill</p></li>

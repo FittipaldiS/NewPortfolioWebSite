@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutTitle" xml:space="preserve">
-    <value>Über mich</value>
+    <value>Su di me</value>
   </data>
   <data name="descriptionAbout" xml:space="preserve">
-    <value>Hallo, mein Name ist Simone und ich liebe es zu programmieren. Ich entdecke gerne neue Technologien und wende sie sowohl bei der Arbeit als auch im Alltag an. Ich liebe es zu reisen und ins Kino zu gehen, und ich bin leidenschaftlich an Videospielen und Musik interessiert.</value>
+    <value>Ciao, mi chiamo Simone e amo programmare. Mi piace scoprire nuove tecnologie e applicarle sia nel lavoro che nella vita quotidiana. Adoro viaggiare e andare al cinema, e sono appassionato di videogiochi e musica.</value>
   </data>
   <data name="detailOrQuote_About" xml:space="preserve">
-    <value>full stack softwareentwikler</value>
+    <value>programmatore full-stack</value>
   </data>
 </root>

@@ -117,19 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="firstName" xml:space="preserve">
-    <value>Simone</value>
-  </data>
-  <data name="surname" xml:space="preserve">
-    <value>Surname</value>
-  </data>
-  <data name="skills" xml:space="preserve">
-    <value>Skills</value>
-  </data>
-  <data name="aboutMe" xml:space="preserve">
+  <data name="AboutTitle" xml:space="preserve">
     <value>About me</value>
   </data>
-  <data name="description" xml:space="preserve">
-    <value>Hello, my name is Simone, and I love programming. I enjoy exploring new technologies and applying them both at work and in everyday life. I love traveling and going to the cinema, and I am passionate about video games and music.</value>
+  <data name="descriptionAbout" xml:space="preserve">
+    <value>Hello, my name is Simone, and I love programming. I enjoy discovering new technologies and applying them both at work and in everyday life. I love traveling and going to the cinema, and I am passionate about video games and music.</value>
+  </data>
+  <data name="detailOrQuote_About" xml:space="preserve">
+    <value>full stack developer</value>
   </data>
 </root>

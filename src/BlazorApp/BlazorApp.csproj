@@ -12,7 +12,32 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Shared\Resources\Resource.de.resx" />
+    <EmbeddedResource Remove="Shared\Resources\Resource.it.resx" />
+    <EmbeddedResource Remove="Shared\Resources\Resource.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Components\Home.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Shared\Resources\Resource.it.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Shared\Resources\Resource.de.resx">
+      <CustomToolNamespace></CustomToolNamespace>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Generator></Generator>
+    </None>
+    <None Include="Shared\Resources\Resource.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +46,14 @@
 
     <PackageReference Include="Microsoft.Extensions.Localization" Version="9.0.0" />
     <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Shared\Resources\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   

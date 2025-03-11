@@ -5,7 +5,7 @@ using BlazorApp.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
-builder.Services.AddLocalization();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Shared/Resources");
 
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");

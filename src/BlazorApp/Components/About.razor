@@ -67,4 +67,7 @@
         pgImage = await HeroImageService.GetHeroAsync(img => img.Name == "portfolio");
 
     }
+
+    //Localizer
+    @inject IStringLocalizer<Resource> Localizer
 }

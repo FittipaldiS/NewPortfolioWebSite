@@ -41,12 +41,30 @@
     </div>
 
 
-     <div id="blazor-error-ui">
+    <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
-    </div> 
-    <script src="_framework/blazor.webassembly.js"></script>
+    </div>
+    <script src="_framework/blazor.webassembly.js">
+
+
+
+    </script>
+
+    <script>
+        window.blazorCulture = {
+            set: function (culture) {
+                localStorage.setItem('blazorCulture', culture);
+                document.location.reload();
+            },
+            get: function () {
+                return localStorage.getItem('blazorCulture');
+            }
+        };
+    </script>
+
+
 </body>
 
 </html>

@@ -1,0 +1,50 @@
+@using System.Globalization
+@using Microsoft.AspNetCore.Components
+@using Microsoft.JSInterop
+
+<strong>Culture:</strong>
+
+<select class="form-control" @bind="SelectedCulture" style="width:300px; margin-left:10px;">
+    @foreach (var culture in cultures)
+    {
+        <option value="@culture.Name">@culture.DisplayName</option>
+    }
+</select>
+
+@code {
+    [Inject]
+    public NavigationManager NavManager { get; set; }
+
+    [Inject]
+    public IJSRuntime JSRuntime { get; set; }
+
+    private CultureInfo[] cultures = new[]
+    {
+        new CultureInfo("en-US"),
+        new CultureInfo("de-DE"),
+        // Aggiungi altre culture qui se necessario
+    };
+
+    private CultureInfo _selectedCulture;
+    private CultureInfo SelectedCulture
+    {
+        get => _selectedCulture ?? CultureInfo.CurrentCulture;
+        set
+        {
+            if (_selectedCulture != value)
+            {
+                _selectedCulture = value;
+                ChangeCulture(value.Name);
+            }
+        }
+    }
+
+    private async Task ChangeCulture(string cultureName)
+    {
+        // Usa JSRuntime per salvare la cultura selezionata nel localStorage o sessionStorage
+        await JSRuntime.InvokeVoidAsync("blazorCulture.set", cultureName);
+
+        // Dopo aver cambiato la cultura, ricarica la pagina per applicare la nuova cultura
+        NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+    }
+}

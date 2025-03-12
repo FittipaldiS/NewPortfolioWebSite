@@ -14,7 +14,7 @@
             }
             else
             {
-                <h1>@property.Title</h1>
+                <h1>@Localizer["Developer_Home"]</h1>
                 <h2>@property.Name</h2>
             }
         </div>
@@ -82,4 +82,7 @@
         property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "home");
     }
+
+    //Localizer
+    @inject IStringLocalizer<Resource> Localizer
 }

@@ -1,0 +1,86 @@
+@using System.Globalization
+@using Microsoft.AspNetCore.Components
+@using Microsoft.JSInterop
+@using BlazorApp.Shared
+
+<div style="display: flex; gap: 10px;z-index: 9999;">
+    @foreach (var culture in cultures)
+    {
+        var imgSrc = culture.Name switch
+        {
+            (string)@DE => @de_image.Src,
+            (string)@IT => @it_image.Src,
+            (string)@EN => @en_image.Src,
+            _ => ""
+        };
+
+        <button @onclick="() => ChangeCulture(culture.Name)" style="border: none; background: none; cursor: pointer;">
+            <img src="@imgSrc" alt="@culture.DisplayName" width="30" height="20" />
+        </button>
+    }
+</div>
+
+@code {
+    private void ChangeCulture(string cultureName)
+    {
+        var js = (IJSInProcessRuntime)JSRuntime;
+        js.InvokeVoid("blazorCulture.set", cultureName);
+        NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+    }
+}
+
+
+@code {
+    private const string EN = "en-US";
+    private const string DE = "de-DE";
+    private const string IT = "it-IT";
+
+    //Localizer
+    [Inject]
+    public NavigationManager NavManager { get; set; }
+
+    [Inject]
+    public IJSRuntime JSRuntime { get; set; }
+
+    CultureInfo[] cultures = new[]
+    {
+        new CultureInfo(EN),
+        new CultureInfo(DE),
+        new CultureInfo(IT),
+    };
+
+    CultureInfo Culture
+    {
+        get => CultureInfo.CurrentCulture;
+        set
+        {
+            if (CultureInfo.CurrentCulture != value)
+            {
+                var js = (IJSInProcessRuntime)JSRuntime;
+                js.InvokeVoid("blazorCulture.set", value.Name);
+                NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+            }
+        }
+    }
+
+    //ImageHero
+    [Parameter, EditorRequired]
+    public required HttpClient Http { get; set; }
+
+    [Parameter, EditorRequired]
+    public required HeroImageService HeroImageService { get; set; }
+
+    // private HeroImage? property;
+    private HeroImage? it_image;
+    private HeroImage? de_image;
+    private HeroImage? en_image;
+
+    protected override async Task OnInitializedAsync()
+    {
+        it_image = await HeroImageService.GetHeroAsync(img => img.Name is "flag_It");
+        de_image = await HeroImageService.GetHeroAsync(img => img.Name is "flag_De");
+        en_image = await HeroImageService.GetHeroAsync(img => img.Name is "flag_En");
+
+        // StateHasChanged();
+    }
+}

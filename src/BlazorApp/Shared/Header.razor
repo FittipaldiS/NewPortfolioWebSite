@@ -1,10 +1,10 @@
 @inject NavigationManager MyNavigationManager
 
 <div id="header" >
-    <a href="#home" class="@GetActiveClass("#home")" @onclick='() => SetActive("#home")'>Home</a>
-    <a href="#about" class="@GetActiveClass("#about")" @onclick='() => SetActive("#about")'>About</a>
-    <a href="#portfolio" class="@GetActiveClass("#portfolio")" @onclick='() => SetActive("#portfolio")'>Portfolio</a>
-    <a href="#contact" class="@GetActiveClass("#contact")" @onclick='() => SetActive("#contact")'>Contact</a>
+    <a href="#home" class="@GetActiveClass("#home")" @onclick='() => SetActive("#home")'>@Localizer["Home_Bar"]</a>
+    <a href="#about" class="@GetActiveClass("#about")" @onclick='() => SetActive("#about")'>@Localizer["About_Bar"]</a>
+    <a href="#portfolio" class="@GetActiveClass("#portfolio")" @onclick='() => SetActive("#portfolio")'>@Localizer["Portfolio_Bar"]</a>
+    <a href="#contact" class="@GetActiveClass("#contact")" @onclick='() => SetActive("#contact")'>@Localizer["Contact_Bar"]</a>
 </div>
 
 
@@ -23,4 +23,7 @@
 
         StateHasChanged();
     }
+
+    //Localizer
+    @inject IStringLocalizer<Resource> Localizer
 }

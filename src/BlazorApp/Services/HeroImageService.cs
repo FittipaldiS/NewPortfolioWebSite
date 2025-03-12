@@ -19,7 +19,13 @@ public sealed class HeroImageService : IDisposable
     internal async Task<HeroImage?> GetHeroAsync(Func<HeroImage, bool> predicate)
     {
         var heroes = await _getHeroImagesTask;
-        return heroes?.FirstOrDefault(predicate);
+        var hero = heroes?.FirstOrDefault(predicate);
+        if (hero == null)
+        {
+            //Cancella la cache
+            Console.WriteLine("Immagine non trovata!");
+        }
+        return hero;
     }
     
     public void Dispose() => _client.Dispose();

@@ -18,6 +18,20 @@
     "name": "sfondoPc",
     "src": "images/SfondoComputerCasa.jpg",
     "alt": "my"
+  },
+  {
+    "name": "flag_It",
+    "src": "images/Italy-Flag.png",
+    "alt": "italy flag"
+  },
+  {
+    "name": "flag_De",
+    "src": "images/Germany-Flag.png",
+    "alt": "Germany flag"
+  },
+  {
+    "name": "flag_En",
+    "src": "images/English-Flag.png",
+    "alt": "English flag"
   }
-
 ]

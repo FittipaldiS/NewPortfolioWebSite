@@ -120,10 +120,25 @@
   <data name="AboutTitle" xml:space="preserve">
     <value>About me</value>
   </data>
+  <data name="About_Bar" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Contact_Bar" xml:space="preserve">
+    <value>Contact</value>
+  </data>
   <data name="descriptionAbout" xml:space="preserve">
     <value>Hello, my name is Simone, and I love programming. I enjoy discovering new technologies and applying them both at work and in everyday life. I love traveling and going to the cinema, and I am passionate about video games and music.</value>
   </data>
   <data name="detailOrQuote_About" xml:space="preserve">
     <value>full stack developer</value>
+  </data>
+  <data name="Developer_Home" xml:space="preserve">
+    <value>Software Developer</value>
+  </data>
+  <data name="Home_Bar" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Portfolio_Bar" xml:space="preserve">
+    <value>Portfolio</value>
   </data>
 </root>

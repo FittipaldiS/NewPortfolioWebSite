@@ -61,11 +61,29 @@ namespace BlazorApp.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        public static string About_Bar {
+            get {
+                return ResourceManager.GetString("About_Bar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to About me.
         /// </summary>
         public static string AboutTitle {
             get {
                 return ResourceManager.GetString("AboutTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact.
+        /// </summary>
+        public static string Contact_Bar {
+            get {
+                return ResourceManager.GetString("Contact_Bar", resourceCulture);
             }
         }
         
@@ -84,6 +102,33 @@ namespace BlazorApp.Shared.Resources {
         public static string detailOrQuote_About {
             get {
                 return ResourceManager.GetString("detailOrQuote_About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Software Developer.
+        /// </summary>
+        public static string Developer_Home {
+            get {
+                return ResourceManager.GetString("Developer_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home_Bar {
+            get {
+                return ResourceManager.GetString("Home_Bar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Portfolio.
+        /// </summary>
+        public static string Portfolio_Bar {
+            get {
+                return ResourceManager.GetString("Portfolio_Bar", resourceCulture);
             }
         }
     }

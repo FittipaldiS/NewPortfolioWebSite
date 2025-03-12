@@ -120,10 +120,25 @@
   <data name="AboutTitle" xml:space="preserve">
     <value>Su di me</value>
   </data>
+  <data name="About_Bar" xml:space="preserve">
+    <value>Su di me</value>
+  </data>
+  <data name="Contact_Bar" xml:space="preserve">
+    <value>Contatti</value>
+  </data>
   <data name="descriptionAbout" xml:space="preserve">
     <value>Ciao, mi chiamo Simone e amo programmare. Mi piace scoprire nuove tecnologie e applicarle sia nel lavoro che nella vita quotidiana. Adoro viaggiare e andare al cinema, e sono appassionato di videogiochi e musica.</value>
   </data>
   <data name="detailOrQuote_About" xml:space="preserve">
     <value>programmatore full-stack</value>
+  </data>
+  <data name="Developer_Home" xml:space="preserve">
+    <value>Sviluppatore Software</value>
+  </data>
+  <data name="Home_Bar" xml:space="preserve">
+    <value>Pagina iniziale</value>
+  </data>
+  <data name="Portfolio_Bar" xml:space="preserve">
+    <value>Portfolio</value>
   </data>
 </root>

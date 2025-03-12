@@ -622,3 +622,19 @@ img.social-icon {
         transform: scale(2.4) rotate(313deg);
     }
 }
+
+select.w3-select {
+    display: block !important;
+    z-index: 9999;
+}
+.culture-selector-container {
+    position: absolute; /* O fixed se vuoi sempre visibile */
+    top: 10px; /* Regola la posizione */
+    right: 10px;
+    background: white; /* Assicura visibilità */
+    padding: 5px;
+    border: 1px solid #ccc;
+    z-index: 9999; /* Più alto degli altri elementi */
+}
+
+

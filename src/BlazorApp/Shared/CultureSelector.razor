@@ -8,9 +8,9 @@
     {
         var imgSrc = culture.Name switch
         {
-            (string)@DE => @de_image.Src,
-            (string)@IT => @it_image.Src,
-            (string)@EN => @en_image.Src,
+            DE => de_image?.Src ?? "",
+            IT => it_image?.Src ?? "",
+            EN => en_image?.Src ?? "",
             _ => ""
         };
 
@@ -80,7 +80,5 @@
         it_image = await HeroImageService.GetHeroAsync(img => img.Name is "flag_It");
         de_image = await HeroImageService.GetHeroAsync(img => img.Name is "flag_De");
         en_image = await HeroImageService.GetHeroAsync(img => img.Name is "flag_En");
-
-        // StateHasChanged();
     }
 }

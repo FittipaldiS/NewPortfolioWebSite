@@ -1,17 +1,9 @@
 <section class="dark w3-mobile" id="about">
     @if (aboutMe is not null)
     {
-        @* <h2 class="w3-left w3-margin w3-padding-32 w3-mobile">@aboutMe.AboutTitle</h2> *@
-
         <h2 class="w3-left w3-margin w3-padding-32 w3-mobile">@Localizer["AboutTitle"]</h2>
     }
    
-
-    @if (jpgImage is not null)
-    {
-    @*     <img class="background" src="@(jpgImage.Src)" alt="@(jpgImage.Alt)" /> *@
-    }
-
     <div class="w3-container w3-mobile">
 
         <div class="w3-padding-32 w3-mobile">
@@ -31,8 +23,9 @@
                         }
                     </div>
                     <div class="w3-container w3-half w3-padding-32 w3-mobile">
-                      @*   <h2 class="w3-mobile">@aboutMe.AboutTitle</h2> *@
+
                         <p class="w3-mobile">@Localizer["descriptionAbout"]</p>
+
                     </div>
                     <div class=" w3-container w3-half w3-padding-32 w3-mobile">
                         <h2>Skills</h2>

@@ -129,6 +129,18 @@
   <data name="descriptionAbout" xml:space="preserve">
     <value>Hallo, mein Name ist Simone und ich liebe es zu programmieren. Ich entdecke gerne neue Technologien und wende sie sowohl bei der Arbeit als auch im Alltag an. Ich liebe es zu reisen und ins Kino zu gehen, und ich bin leidenschaftlich an Videospielen und Musik interessiert.</value>
   </data>
+  <data name="description_blazor_project" xml:space="preserve">
+    <value>Erstellung dieses Portfolios mit Blazor-Technologie mithilfe des freies Projekts auf GitHub: education/codespaces-project-template-dotnet.</value>
+  </data>
+  <data name="description_game_project" xml:space="preserve">
+    <value>Realisierung kleiner Spiele mit Hilfe von Konsolenanwendungen</value>
+  </data>
+  <data name="description_superstore_project" xml:space="preserve">
+    <value>Projekt eines Sportgeschäfts mit CRUD-Operationen, Berechnung des Gesamtpreises der Artikel, Fortsetzung mit Einkäufen und Auswahl der Geschäftsabteilungen.</value>
+  </data>
+  <data name="description_wpf_project" xml:space="preserve">
+    <value>Das Kalenderprogramm Home Office kann Homeoffice-Tage und Büroarbeitstage basierend auf dem Prozentsatz an Homeoffice berechnen, den Sie als Regel für die Büroarbeit festgelegt haben.</value>
+  </data>
   <data name="detailOrQuote_About" xml:space="preserve">
     <value>full stack softwareentwikler</value>
   </data>
@@ -140,5 +152,17 @@
   </data>
   <data name="Portfolio_Bar" xml:space="preserve">
     <value>Portfolio</value>
+  </data>
+  <data name="title_blazor_project" xml:space="preserve">
+    <value>Mein Portfolio-Projekt in .NET Blazor</value>
+  </data>
+  <data name="title_game_project" xml:space="preserve">
+    <value>Die spielen  in C# mit Konsoleanwendung</value>
+  </data>
+  <data name="title_superstore_project" xml:space="preserve">
+    <value>Super Store .Net Core 3.1</value>
+  </data>
+  <data name="title_wpf_project" xml:space="preserve">
+    <value>Der HomeOfficeCalendar WPF projekt in MVVM pattern</value>
   </data>
 </root>

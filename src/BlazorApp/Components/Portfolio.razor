@@ -18,14 +18,12 @@
                                 <h3>@project.Title</h3>
                             </a>
 
-                            <button onclick="myFunction('Demo @count')" class="w3-button w3-block w3-left-align">Description</button>
+                            <button onclick="openAccordion('Demo @count')" class="w3-button w3-block w3-left-align">+</button>
                             <div id="Demo @count" class="w3-hide w3-container">
                                 <p class="small">@project.Description</p>
                             </div>
 
-
                             count++;
-
                         }
                     }
                 </div>
@@ -34,7 +32,7 @@
     </div>
 
     <script>
-        function myFunction(id) {
+        function openAccordion(id) {
             
             var x = document.getElementById(id);
             if (x) {
@@ -69,6 +67,8 @@
     {
         projects = await Http.GetFromJsonAsync<List<Project>>("sample-data/projects.json");
         pgImage = await HeroImageService.GetHeroAsync(img => img.Name == "sfondoPc");
-
     }
+
+    //Localizer
+    @inject IStringLocalizer<Resource> Localizer
 }

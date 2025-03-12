@@ -129,6 +129,18 @@
   <data name="descriptionAbout" xml:space="preserve">
     <value>Hello, my name is Simone, and I love programming. I enjoy discovering new technologies and applying them both at work and in everyday life. I love traveling and going to the cinema, and I am passionate about video games and music.</value>
   </data>
+  <data name="description_blazor_project" xml:space="preserve">
+    <value>Creation of this portfolio using Blazor technology with the free project on GitHub: education/codespaces-project-template-dotnet.</value>
+  </data>
+  <data name="description_game_project" xml:space="preserve">
+    <value>Development of small games using console applications.</value>
+  </data>
+  <data name="description_superstore_project" xml:space="preserve">
+    <value>Project for a sports store with CRUD operations, calculation of the total price of items, continuation with purchases, and selection of store departments.</value>
+  </data>
+  <data name="description_wpf_project" xml:space="preserve">
+    <value>The Home Office calendar program can calculate home office days and regular workdays based on the percentage of home office you have set as the rule for working in the office.</value>
+  </data>
   <data name="detailOrQuote_About" xml:space="preserve">
     <value>full stack developer</value>
   </data>
@@ -140,5 +152,17 @@
   </data>
   <data name="Portfolio_Bar" xml:space="preserve">
     <value>Portfolio</value>
+  </data>
+  <data name="title_blazor_project" xml:space="preserve">
+    <value>My Portfolio project  in .NET Blazor</value>
+  </data>
+  <data name="title_game_project" xml:space="preserve">
+    <value>Games in C# with Terminal</value>
+  </data>
+  <data name="title_superstore_project" xml:space="preserve">
+    <value>Super Store .Net Core 3.1</value>
+  </data>
+  <data name="title_wpf_project" xml:space="preserve">
+    <value>HomeOfficeCalendar WPF project in MVVM pattern</value>
   </data>
 </root>

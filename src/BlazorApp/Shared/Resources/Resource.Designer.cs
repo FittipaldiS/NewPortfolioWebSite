@@ -88,6 +88,42 @@ namespace BlazorApp.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Creation of this portfolio using Blazor technology with the free project on GitHub: education/codespaces-project-template-dotnet..
+        /// </summary>
+        public static string description_blazor_project {
+            get {
+                return ResourceManager.GetString("description_blazor_project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Development of small games using console applications..
+        /// </summary>
+        public static string description_game_project {
+            get {
+                return ResourceManager.GetString("description_game_project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Project for a sports store with CRUD operations, calculation of the total price of items, continuation with purchases, and selection of store departments..
+        /// </summary>
+        public static string description_superstore_project {
+            get {
+                return ResourceManager.GetString("description_superstore_project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Home Office calendar program can calculate home office days and regular workdays based on the percentage of home office you have set as the rule for working in the office..
+        /// </summary>
+        public static string description_wpf_project {
+            get {
+                return ResourceManager.GetString("description_wpf_project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hello, my name is Simone, and I love programming. I enjoy discovering new technologies and applying them both at work and in everyday life. I love traveling and going to the cinema, and I am passionate about video games and music..
         /// </summary>
         public static string descriptionAbout {
@@ -129,6 +165,42 @@ namespace BlazorApp.Shared.Resources {
         public static string Portfolio_Bar {
             get {
                 return ResourceManager.GetString("Portfolio_Bar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My Portfolio project  in .NET Blazor.
+        /// </summary>
+        public static string title_blazor_project {
+            get {
+                return ResourceManager.GetString("title_blazor_project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Games in C# with Terminal.
+        /// </summary>
+        public static string title_game_project {
+            get {
+                return ResourceManager.GetString("title_game_project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Super Store .Net Core 3.1.
+        /// </summary>
+        public static string title_superstore_project {
+            get {
+                return ResourceManager.GetString("title_superstore_project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HomeOfficeCalendar WPF project in MVVM pattern.
+        /// </summary>
+        public static string title_wpf_project {
+            get {
+                return ResourceManager.GetString("title_wpf_project", resourceCulture);
             }
         }
     }
